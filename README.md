@@ -78,7 +78,7 @@ then the smb config will be something like below, just make sure the path in eac
     browsable = yes
 ```
 test
-e.g., on Windows machine mount the share with Windows explorer or the "net use" command:
+e.g., on Windows machine mount the share with Windows explorer or the "net use" command (Do **NOT** run the command elevated, e.g. as Administrator, otherwise you won't have access to the mapped drive since it was mappped under the administrator's account :)):
 ```cmd
 net use X: \\192.168.1.100\media smb_pass /user:smb_user /persistent:yes
 ```
