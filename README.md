@@ -80,7 +80,7 @@ then the smb config will be something like below, just make sure the path in eac
 test
 e.g., on Windows machine mount the share with Windows explorer or the "net use" command:
 ```cmd
-net use X: \\192.168.1.100\media smb_pass /user:smb_user
+net use X: \\192.168.1.100\media smb_pass /user:smb_user /persistent:yes
 ```
 or PowerShell if you would like to access it from PowerShell:
 ```PowerShell
